@@ -1,0 +1,136 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --ifm-color-primary: #255f7e;
+  --ifm-color-primary-dark: #215570;
+  --ifm-color-primary-darker: #1f5069;
+  --ifm-color-primary-darkest: #1a4357;
+  --ifm-color-primary-light: #29698c;
+  --ifm-color-primary-lighter: #2b6e93;
+  --ifm-color-primary-lightest: #327fab;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --ifm-font-family-base: 'Lato', sans-serif;
+  --ifm-font-family-monospace: 'Courier New', monospace;
+  --ifm-h1-font-size: 3rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+
+  /* Spacing */
+  --ifm-spacing-horizontal: 1.25rem;
+  --ifm-spacing-vertical: 1.25rem;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #6ba6c4;
+  --ifm-color-primary-dark: #5395b8;
+  --ifm-color-primary-darker: #488ab1;
+  --ifm-color-primary-darkest: #367399;
+  --ifm-color-primary-light: #83b7d0;
+  --ifm-color-primary-lighter: #8ebfD6;
+  --ifm-color-primary-lightest: #a5ccde;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  --ifm-background-color: #121212;
+  --ifm-font-color-base: #e0e0e0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+/* Homepage Hero Section */
+.hero-banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 6rem 2rem;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-banner__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-banner__title {
+  font-size: 4rem;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-banner__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Homepage Cards Section */
+.homepage-cards {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: var(--ifm-card-background-color);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-card-border-color);
+  padding: 2rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-family: 'Lora', serif;
+  margin-top: 0;
+}
+
+/* Navbar & Footer */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
