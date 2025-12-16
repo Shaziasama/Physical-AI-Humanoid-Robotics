@@ -29,9 +29,12 @@
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
-
-[Gates determined based on constitution file]
+*   **I. Modular and Composable Design**: Are all components designed as independent, reusable modules?
+*   **II. Extensible and Pluggable Architecture**: Is the system designed to be easily extendable?
+*   **III. Reproducibility and Determinism**: Are all experiments and simulations reproducible?
+*   **IV. Workflow-Driven and Explicit Processes**: Are complex processes defined as explicit workflows?
+*   **V. Performance and Optimization**: Is performance-critical code optimized?
+*   **VI. Cross-Platform Compatibility**: Is the software compatible with multiple operating systems?
 
 ## Project Structure
 

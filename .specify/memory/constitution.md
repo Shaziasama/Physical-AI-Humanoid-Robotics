@@ -1,55 +1,57 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.0.0 → 1.0.0
+Modified principles:
+- [PRINCIPLE_1_NAME] → I. Modular and Composable Design
+- [PRINCIPLE_2_NAME] → II. Extensible and Pluggable Architecture
+- [PRINCIPLE_3_NAME] → III. Reproducibility and Determinism (NON-NEGOTIABLE)
+- [PRINCIPLE_4_NAME] → IV. Workflow-Driven and Explicit Processes
+- [PRINCIPLE_5_NAME] → V. Performance and Optimization
+- [PRINCIPLE_6_NAME] → VI. Cross-Platform Compatibility
+Added sections:
+- Additional Constraints
+- Development Workflow
+Removed sections: None
+Templates requiring updates:
+- ✅ .specify/templates/plan-template.md
+- ✅ .specify/templates/spec-template.md
+- ✅ .specify/templates/tasks-template.md
+- ✅ .specify/templates/commands/*.md
+- ✅ README.md
+Follow-up TODOs: None
+-->
+# Physical AI Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Modular and Composable Design
+All components must be designed as independent, reusable modules with well-defined interfaces. Each module should be independently testable and documented. This promotes separation of concerns and simplifies maintenance and extension.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Extensible and Pluggable Architecture
+The system must be designed with an extensible and pluggable architecture, allowing for the easy addition of new models, data sources, and other components without requiring major changes to the core system. This is crucial for a research-oriented project.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Reproducibility and Determinism (NON-NEGOTIABLE)
+All experiments and simulations must be reproducible. This requires strict control over random number generation, environment configurations, and software versions. All code must be deterministic where possible.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Workflow-Driven and Explicit Processes
+Complex processes, such as data processing pipelines and machine learning workflows, must be defined as explicit, sequential workflows. This ensures clarity, simplifies debugging, and allows for easier automation.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Performance and Optimization
+High-performance code is critical, especially in simulation, control, and perception modules. C/C++ should be used for performance-critical components. Code should be profiled and optimized where necessary.
 
-### [PRINCIPLE_6_NAME]
+### VI. Cross-Platform Compatibility
+The software should be designed to be compatible with multiple operating systems, including Linux and Windows. Platform-specific code should be isolated and clearly marked.
 
+## Additional Constraints
 
-[PRINCIPLE__DESCRIPTION]
+The primary technology stack includes Python with PyTorch for machine learning, C++ for high-performance components, and ROS 2 for robotic communication. All new components must be compatible with this stack.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All new features and bug fixes must be developed in separate branches. All code must be reviewed and approved by at least one other team member before being merged into the main branch. All code must be formatted using a consistent style (e.g., Black for Python, Clang-Format for C++).
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the single source of truth for all development practices. Any amendments to this constitution require a formal proposal, review, and approval process. All pull requests must be reviewed for compliance with this constitution.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-16 | **Last Amended**: 2025-12-16

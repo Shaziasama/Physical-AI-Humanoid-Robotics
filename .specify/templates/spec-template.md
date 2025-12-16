@@ -100,6 +100,15 @@
 - **[Entity 1]**: [What it represents, key attributes without implementation]
 - **[Entity 2]**: [What it represents, relationships to other entities]
 
+## Constitution Check
+
+*   **I. Modular and Composable Design**: Are all components designed as independent, reusable modules?
+*   **II. Extensible and Pluggable Architecture**: Is the system designed to be easily extendable?
+*   **III. Reproducibility and Determinism**: Are all experiments and simulations reproducible?
+*   **IV. Workflow-Driven and Explicit Processes**: Are complex processes defined as explicit workflows?
+*   **V. Performance and Optimization**: Is performance-critical code optimized?
+*   **VI. Cross-Platform Compatibility**: Is the software compatible with multiple operating systems?
+
 ## Success Criteria *(mandatory)*
 
 <!--

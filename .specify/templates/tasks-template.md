@@ -25,6 +25,16 @@ description: "Task list template for feature implementation"
 - **Mobile**: `api/src/`, `ios/src/` or `android/src/`
 - Paths shown below assume single project - adjust based on plan.md structure
 
+## Constitution Check
+
+*   **I. Modular and Composable Design**: Are all components designed as independent, reusable modules?
+*   **II. Extensible and Pluggable Architecture**: Is the system designed to be easily extendable?
+*   **III. Reproducibility and Determinism**: Are all experiments and simulations reproducible?
+*   **IV. Workflow-Driven and Explicit Processes**: Are complex processes defined as explicit workflows?
+*   **V. Performance and Optimization**: Is performance-critical code optimized?
+*   **VI. Cross-Platform Compatibility**: Is the software compatible with multiple operating systems?
+
+
 <!-- 
   ============================================================================
   IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
