@@ -29,12 +29,10 @@
 
 ## Constitution Check
 
-*   **I. Modular and Composable Design**: Are all components designed as independent, reusable modules?
-*   **II. Extensible and Pluggable Architecture**: Is the system designed to be easily extendable?
-*   **III. Reproducibility and Determinism**: Are all experiments and simulations reproducible?
-*   **IV. Workflow-Driven and Explicit Processes**: Are complex processes defined as explicit workflows?
-*   **V. Performance and Optimization**: Is performance-critical code optimized?
-*   **VI. Cross-Platform Compatibility**: Is the software compatible with multiple operating systems?
+*   **I. Spec-First Development**: Is all development following a spec-first approach using Spec-Kit Plus?
+*   **II. Technical Accuracy and Reproducibility**: Are technical content and code implementations rigorously accurate and fully reproducible?
+*   **III. Clear and Accessible Content**: Is written content clear, concise, and accessible to both human developers and AI engineers?
+*   **IV. Grounded and Non-Hallucinated Responses**: Are AI-generated responses strictly grounded in provided source material and explicitly avoiding hallucination?
 
 ## Project Structure
 
