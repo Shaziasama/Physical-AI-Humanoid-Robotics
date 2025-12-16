@@ -8,14 +8,16 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-site.com',
+  url: 'https://shaziasama.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics/',
 
   // GitHub pages deployment config.
-  organizationName: 'your-github-org', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-text-book', // Usually your repo name.
+  organizationName: 'Shaziasama', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-Humanoid-Robotics', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,13 +35,13 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Shaziasama/Physical-AI-Humanoid-Robotics/tree/main/docusaurus-text-book/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Shaziasama/Physical-AI-Humanoid-Robotics/tree/main/docusaurus-text-book/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -70,7 +72,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/Shaziasama',
+          href: 'https://github.com/Shaziasama/Physical-AI-Humanoid-Robotics',
           label: 'GitHub',
           position: 'right',
         },
